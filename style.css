@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  animation: loading 3s;
+}
+
+body {
+  background-color: black;
+  color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+li {
+  list-style-position: inside;
+}
+
+.profil__bilde {
+  width: 200px;
+}
+
+.about-me__title {
+  font-size: larger;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
